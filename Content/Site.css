@@ -1,0 +1,143 @@
+﻿/* Fondo de la página con imagen */
+body {
+    background-image: url('assets/neon.jpg');
+    background-size: cover;
+    background-position: center;
+    color: #fff;
+    font-family: 'Arial', sans-serif;
+}
+
+.body-content {
+    margin-top: 15px;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+/* Efecto Neon Morado para el texto */
+.text-neon {
+    color: #a300ff; /* Morado neón */
+    text-shadow: 0 0 5px #a300ff, 0 0 10px #a300ff, 0 0 20px #a300ff, 0 0 40px #ff00ff, 0 0 80px #ff00ff;
+}
+
+/* Fondo oscuro y borde neon para la tabla */
+.neon-table {
+    background-color: rgba(26, 26, 26, 0.8); /* Fondo oscuro semi-transparente */
+    color: #fff;
+    border: 5px solid #a300ff; /* Borde morado neón */
+    box-shadow: 0 0 10px #a300ff, 0 0 20px #a300ff; /* Sombra morada */
+}
+
+    .neon-table td, .neon-table th {
+        border: 1px solid #333;
+        text-shadow: 0 0 5px #fff, 0 0 10px #fff;
+    }
+
+/* Botones con estilo morado neón */
+.neon-button {
+    background-color: #282828;
+    color: #a300ff;
+    border: 2px solid #a300ff;
+    box-shadow: 0 0 5px #a300ff, 0 0 10px #a300ff;
+    transition: all 0.3s ease;
+}
+
+    .neon-button:hover {
+        color: #fff;
+        background-color: #a300ff;
+        box-shadow: 0 0 20px #a300ff, 0 0 30px #a300ff;
+    }
+
+/* Añadir un efecto hover a las filas de la tabla */
+.neon-table tbody tr:hover {
+    background-color: #333;
+    box-shadow: 0 0 10px #a300ff, 0 0 20px #a300ff;
+    transition: background-color 0.2s ease;
+}
+
+/* Personalización para botones de acciones */
+.neon-button-warning, .neon-button-info, .neon-button-danger {
+    background-color: #a300ff;
+}
+/* Neon Text Styles */
+.text-neon {
+    color: #f72585;
+    text-shadow: 0 0 5px #f72585, 0 0 10px #f72585, 0 0 15px #f72585;
+}
+
+/* Neon Button */
+.neon-button {
+    background-color: #3a0ca3;
+    border: none;
+    color: white;
+    text-shadow: 0 0 5px #7209b7, 0 0 10px #7209b7;
+}
+
+    .neon-button:hover {
+        background-color: #7209b7;
+        text-shadow: 0 0 10px #f72585, 0 0 15px #f72585;
+    }
+
+/* Neon Input */
+.neon-input {
+    border: 1px solid #f72585;
+    box-shadow: 0 0 5px #f72585;
+    background-color: #2a2a72;
+    color: white;
+}
+
+    .neon-input:focus {
+        box-shadow: 0 0 10px #f72585, 0 0 15px #f72585;
+    }
+
+/* Neon Form Divider */
+.neon-divider {
+    border-top: 2px solid #f72585;
+    box-shadow: 0 0 5px #f72585;
+}
+
+/* Neon Checkbox */
+.neon-checkbox input {
+    width: 20px;
+    height: 20px;
+    box-shadow: 0 0 5px #f72585;
+}
+/* Neon Navbar */
+.neon-navbar {
+    background-color: #1a1a40;
+    box-shadow: 0 0 10px #f72585;
+}
+
+/* Neon Link Styles */
+.neon-link {
+    color: #f72585;
+    text-shadow: 0 0 5px #f72585, 0 0 10px #f72585;
+}
+
+    .neon-link:hover {
+        color: #f72585;
+        text-shadow: 0 0 15px #f72585, 0 0 20px #f72585;
+    }
+
+/* Neon Toggler Icon */
+.navbar-toggler-icon.neon-toggler-icon {
+    filter: brightness(2);
+}
+
+/* Neon Divider */
+.neon-divider {
+    border-top: 2px solid #f72585;
+    box-shadow: 0 0 5px #f72585;
+}
+
+/* Neon Container */
+.neon-container {
+    background-color: #2a2a72;
+    padding: 20px;
+    box-shadow: 0 0 15px #f72585;
+}
+
+/* Neon Text */
+.text-neon {
+    color: #f72585;
+    text-shadow: 0 0 5px #f72585, 0 0 10px #f72585;
+}

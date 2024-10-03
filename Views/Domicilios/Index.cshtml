@@ -1,0 +1,52 @@
+﻿@model IEnumerable<ModasCentroMVC.Domicilios>
+
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2 class="my-4 text-center text-neon">Index</h2>
+
+<p>
+    <a href="@Url.Action("Create")" class="btn btn-primary neon-button mb-3">
+        <i class="bi bi-plus-circle"></i> Create New
+    </a>
+</p>
+
+<div class="table-responsive">
+    <table class="table table-bordered table-hover table-striped neon-table">
+        <thead class="table-dark">
+            <tr>
+                <th>@Html.DisplayNameFor(model => model.Calle)</th>
+                <th>@Html.DisplayNameFor(model => model.Numero)</th>
+                <th>@Html.DisplayNameFor(model => model.Colonia)</th>
+                <th>@Html.DisplayNameFor(model => model.Ciudad)</th>
+                <th>@Html.DisplayNameFor(model => model.disponibilidad)</th>
+                <th>Actions</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var item in Model)
+            {
+                <tr>
+                    <td>@Html.DisplayFor(modelItem => item.Calle)</td>
+                    <td>@Html.DisplayFor(modelItem => item.Numero)</td>
+                    <td>@Html.DisplayFor(modelItem => item.Colonia)</td>
+                    <td>@Html.DisplayFor(modelItem => item.Ciudad)</td>
+                    <td>@Html.DisplayFor(modelItem => item.disponibilidad)</td>
+                    <td>
+                        <a href="@Url.Action("Edit", new { id = item.ID_Domicilio })" class="btn btn-sm neon-button-warning">
+                            <i class="bi bi-pencil-square"></i> Edit
+                        </a>
+                        <a href="@Url.Action("Details", new { id = item.ID_Domicilio })" class="btn btn-sm neon-button-info">
+                            <i class="bi bi-info-circle"></i> Details
+                        </a>
+                        <a href="@Url.Action("Delete", new { id = item.ID_Domicilio })" class="btn btn-sm neon-button-danger">
+                            <i class="bi bi-trash"></i> Delete
+                        </a>
+                    </td>
+                </tr>
+            }
+            
+        </tbody>
+    </table>
+</div>

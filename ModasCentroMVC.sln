@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.11.35303.130
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ModasCentroMVC", "ModasCentroMVC.csproj", "{F6E17484-4275-4263-9E78-496B5E9FFD9B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DTO", "DTO\DTO.csproj", "{6833DE2B-35C4-4977-BD7B-7356FBCDE20F}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{F6E17484-4275-4263-9E78-496B5E9FFD9B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F6E17484-4275-4263-9E78-496B5E9FFD9B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F6E17484-4275-4263-9E78-496B5E9FFD9B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F6E17484-4275-4263-9E78-496B5E9FFD9B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6833DE2B-35C4-4977-BD7B-7356FBCDE20F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6833DE2B-35C4-4977-BD7B-7356FBCDE20F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6833DE2B-35C4-4977-BD7B-7356FBCDE20F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6833DE2B-35C4-4977-BD7B-7356FBCDE20F}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {37C45FE8-8945-4E60-97CD-0CEF1892E01B}
+	EndGlobalSection
+EndGlobal

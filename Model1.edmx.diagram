@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="0598b19aba5b4fc8a1e4d63c05b67a96" Name="Diagram1" ZoomLevel="64">
+        <EntityTypeShape EntityType="ModasDelCentro_DBModel.Clientes" Width="1.5" PointX="0.75" PointY="5.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="ModasDelCentro_DBModel.DetalleVentas" Width="1.5" PointX="7.5" PointY="1.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="ModasDelCentro_DBModel.Domicilios" Width="1.5" PointX="0.75" PointY="1.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="ModasDelCentro_DBModel.Empleados" Width="1.5" PointX="3" PointY="1" IsExpanded="true" />
+        <EntityTypeShape EntityType="ModasDelCentro_DBModel.Productos" Width="1.5" PointX="5.25" PointY="5" IsExpanded="true" />
+        <EntityTypeShape EntityType="ModasDelCentro_DBModel.Roles" Width="1.5" PointX="7.75" PointY="6.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="ModasDelCentro_DBModel.Status_Venta" Width="1.5" PointX="0.75" PointY="8.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="ModasDelCentro_DBModel.Usuarios" Width="1.5" PointX="10" PointY="5.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="ModasDelCentro_DBModel.Ventas" Width="1.5" PointX="5.25" PointY="1.25" IsExpanded="true" />
+        <AssociationConnector Association="ModasDelCentro_DBModel.FK__DetalleVe__dispo__656C112C" ManuallyRouted="false" />
+        <AssociationConnector Association="ModasDelCentro_DBModel.FK__DetalleVe__Venta__66603565" ManuallyRouted="false" />
+        <AssociationConnector Association="ModasDelCentro_DBModel.FK__Empleados__dispo__3C69FB99" ManuallyRouted="false" />
+        <AssociationConnector Association="ModasDelCentro_DBModel.FK__Ventas__disponib__4CA06362" ManuallyRouted="false" />
+        <AssociationConnector Association="ModasDelCentro_DBModel.FK__Usuarios__dispon__19DFD96B" ManuallyRouted="false" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>

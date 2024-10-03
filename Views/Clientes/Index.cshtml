@@ -1,0 +1,51 @@
+﻿@model IEnumerable<ModasCentroMVC.Clientes>
+
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2 class="my-4 text-center text-neon">Index</h2>
+
+<p>
+    <a href="@Url.Action("Create")" class="btn btn-primary neon-button mb-3">
+        <i class="bi bi-plus-circle"></i> Create New
+    </a>
+</p>
+
+<div class="table-responsive">
+    <table class="table table-bordered table-hover table-striped neon-table">
+        <thead class="table-dark">
+            <tr>
+                <th>@Html.DisplayNameFor(model => model.Nombre)</th>
+                <th>@Html.DisplayNameFor(model => model.Apellido_Paterno)</th>
+                <th>@Html.DisplayNameFor(model => model.Apellido_Materno)</th>
+                <th>@Html.DisplayNameFor(model => model.Telefono)</th>
+                <th>@Html.DisplayNameFor(model => model.disponibilidad)</th>
+                <th>Actions</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var item in Model)
+            {
+                <tr>
+                    <td>@Html.DisplayFor(modelItem => item.Nombre)</td>
+                    <td>@Html.DisplayFor(modelItem => item.Apellido_Paterno)</td>
+                    <td>@Html.DisplayFor(modelItem => item.Apellido_Materno)</td>
+                    <td>@Html.DisplayFor(modelItem => item.Telefono)</td>
+                    <td>@Html.DisplayFor(modelItem => item.disponibilidad)</td>
+                    <td>
+                        <a href="@Url.Action("Edit", new { id = item.ID_Clientes })" class="btn btn-sm neon-button-warning">
+                            <i class="bi bi-pencil-square"></i> Edit
+                        </a>
+                        <a href="@Url.Action("Details", new { id = item.ID_Clientes })" class="btn btn-sm neon-button-info">
+                            <i class="bi bi-info-circle"></i> Details
+                        </a>
+                        <a href="@Url.Action("Delete", new { id = item.ID_Clientes })" class="btn btn-sm neon-button-danger">
+                            <i class="bi bi-trash"></i> Delete
+                        </a>
+                    </td>
+                </tr>
+            }
+        </tbody>
+    </table>
+</div>

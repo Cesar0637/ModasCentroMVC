@@ -1,0 +1,54 @@
+﻿@model IEnumerable<ModasCentroMVC.Ventas>
+
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2 class="my-4 text-center text-neon">Index</h2>
+
+<p>
+    <a href="@Url.Action("Create")" class="btn btn-primary neon-button mb-3">
+        <i class="bi bi-plus-circle"></i> Create New
+    </a>
+</p>
+
+<div class="table-responsive">
+    <table class="table table-bordered table-hover table-striped neon-table">
+        <thead class="table-dark">
+            <tr>
+                <th>@Html.DisplayNameFor(model => model.Total)</th>
+                <th>@Html.DisplayNameFor(model => model.Status_ID)</th>
+                <th>@Html.DisplayNameFor(model => model.Folio)</th>
+                <th>@Html.DisplayNameFor(model => model.Fecha_Venta)</th>
+                <th>@Html.DisplayNameFor(model => model.disponibilidad)</th>
+                <th>@Html.DisplayNameFor(model => model.Empleados.Nombre)</th>
+                <th>Actions</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var item in Model)
+            {
+                <tr>
+                    <td>@Html.DisplayFor(modelItem => item.Total)</td>
+                    <td>@Html.DisplayFor(modelItem => item.Status_ID)</td>
+                    <td>@Html.DisplayFor(modelItem => item.Folio)</td>
+                    <td>@Html.DisplayFor(modelItem => item.Fecha_Venta)</td>
+                    <td>@Html.DisplayFor(modelItem => item.disponibilidad)</td>
+                    <td>@Html.DisplayFor(modelItem => item.Empleados.Nombre)</td>
+                    <td>
+                        <a href="@Url.Action("Edit", new { id = item.ID_Venta })" class="btn btn-sm neon-button-warning">
+                            <i class="bi bi-pencil-square"></i> Edit
+                        </a>
+                        <a href="@Url.Action("Details", new { id = item.ID_Venta })" class="btn btn-sm neon-button-info">
+                            <i class="bi bi-info-circle"></i> Details
+                        </a>
+                        <a href="@Url.Action("Delete", new { id = item.ID_Venta })" class="btn btn-sm neon-button-danger">
+                            <i class="bi bi-trash"></i> Delete
+                        </a>
+                    </td>
+                </tr>
+            }
+        </tbody>
+    </table>
+</div>
+

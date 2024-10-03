@@ -1,0 +1,62 @@
+﻿@model IEnumerable<ModasCentroMVC.Productos>
+
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2 class="my-4 text-center text-neon">Index</h2>
+
+<p>
+    <a href="@Url.Action("Create")" class="btn btn-primary neon-button mb-3">
+        <i class="bi bi-plus-circle"></i> Create New
+    </a>
+</p>
+
+<div class="table-responsive">
+    <table class="table table-bordered table-hover table-striped neon-table">
+        <thead class="table-dark">
+            <tr>
+                <th>@Html.DisplayNameFor(model => model.Fecha_Creacion)</th>
+                <th>@Html.DisplayNameFor(model => model.Codigo_Producto)</th>
+                <th>@Html.DisplayNameFor(model => model.Modelo)</th>
+                <th>@Html.DisplayNameFor(model => model.Marca)</th>
+                <th>@Html.DisplayNameFor(model => model.Talla)</th>
+                <th>@Html.DisplayNameFor(model => model.Color)</th>
+                <th>@Html.DisplayNameFor(model => model.Estampado)</th>
+                <th>@Html.DisplayNameFor(model => model.Precio)</th>
+                <th>@Html.DisplayNameFor(model => model.Stock)</th>
+                <th>@Html.DisplayNameFor(model => model.disponibilidad)</th>
+                <th>Actions</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var item in Model)
+            {
+                <tr>
+                    <td>@Html.DisplayFor(modelItem => item.Fecha_Creacion)</td>
+                    <td>@Html.DisplayFor(modelItem => item.Codigo_Producto)</td>
+                    <td>@Html.DisplayFor(modelItem => item.Modelo)</td>
+                    <td>@Html.DisplayFor(modelItem => item.Marca)</td>
+                    <td>@Html.DisplayFor(modelItem => item.Talla)</td>
+                    <td>@Html.DisplayFor(modelItem => item.Color)</td>
+                    <td>@Html.DisplayFor(modelItem => item.Estampado)</td>
+                    <td>@Html.DisplayFor(modelItem => item.Precio)</td>
+                    <td>@Html.DisplayFor(modelItem => item.Stock)</td>
+                    <td>@Html.DisplayFor(modelItem => item.disponibilidad)</td>
+                    <td>
+                        <a href="@Url.Action("Edit", new { id = item.ID_Producto })" class="btn btn-sm neon-button-warning">
+                            <i class="bi bi-pencil-square"></i> Edit
+                        </a>
+                        <a href="@Url.Action("Details", new { id = item.ID_Producto })" class="btn btn-sm neon-button-info">
+                            <i class="bi bi-info-circle"></i> Details
+                        </a>
+                        <a href="@Url.Action("Delete", new { id = item.ID_Producto })" class="btn btn-sm neon-button-danger">
+                            <i class="bi bi-trash"></i> Delete
+                        </a>
+                    </td>
+                </tr>
+            }
+            
+        </tbody>
+    </table>
+</div>
